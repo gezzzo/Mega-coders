@@ -1,0 +1,2482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>megacode</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <style></style>
+  <body>
+    <script src="js/logic.js"></script>
+    <!-- header -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+    <!-- Owl Carousel CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <!-- jQuery (required by Owl Carousel) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Owl Carousel JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      function setZoom(percentage) {
+        document.body.style.zoom = percentage + "%";
+      }
+
+      // Set the zoom level to 67%
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+          loop: false,
+          margin: 10,
+          dots: true,
+          nav: false,
+          autoplay: true, // Enable autoplay
+          autoplayTimeout: 5000, // Set autoplay interval in milliseconds (5 seconds in this example)
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 4,
+            },
+          },
+        });
+      });
+      AOS.init();
+      // setZoom(88);
+      // Function to increase the number to 300 when hovered over
+
+      function increaseNumber(element) {
+        element.textContent = "300"; // Change the text content to "300"
+        element.style.fontSize = "24px"; // Set the font size to your desired size
+      }
+    </script>
+    <nav class="bg-white w-full start-0 border-b border-gray-200">
+      <div
+        class="container flex flex-wrap items-center justify-between mx-auto lg:p-2 p-3 2xl:p-4"
+      >
+        <a
+          href="/home.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse w-[10%]"
+        >
+          <img src="./imgs/logo.png" alt="logo" class="lg:h-[47px]" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-sticky"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-sticky"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:max-w-max"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white md:w-full items-center"
+          >
+            <li>
+              <a
+                href="/home.html"
+                class="block custom-style py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="m-0">
+              <a
+                href="/AbautUs.html"
+                class="block text-nowrap py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 float-start"
+                >About us</a
+              >
+            </li>
+            <li>
+              <a
+                href="/Comunity.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >community</a
+              >
+            </li>
+            <li>
+              <a
+                href="/home.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                ><div class="language">
+                  <a onclick="showLanguages()" class="lang-drpdwn-btn"
+                    >Language</a
+                  >
+                  <div class="dropdown-language">
+                    <a href="/">English</a>
+                    <a href="/se">Swedish</a>
+                  </div>
+                </div></a
+              >
+            </li>
+            <li>
+              <a
+                href="/ContactUs.html"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >Contact Us</a
+              >
+            </li>
+            <li class="md:hidden">
+              <a href="/register.html">
+                <button
+                  type="button"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >
+                  Register
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="/login.html" class="md:hidden">
+                <button
+                  type="button"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+                >
+                  Log In
+                </button>
+              </a>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+        <button
+          data-collapse-toggle="navbar-sticky2"
+          type="button"
+          class="md:inline-flex items-center p-2 w-[10%] h-10 justify-center text-sm text-gray-500 rounded-lg hidden lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-sticky2"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <rect width="32" height="32" fill="url(#pattern0_948_58798)" />
+            <defs>
+              <pattern
+                id="pattern0_948_58798"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0_948_58798"
+                  transform="scale(0.0078125)"
+                />
+              </pattern>
+              <image
+                id="image0_948_58798"
+                width="128"
+                height="128"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACABAMAAAAxEHz4AAAAA3NCSVQICAjb4U/gAAAACXBIWXMAAASaAAAEmgEucM3eAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAB5QTFRF////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAhow4rQAAAAl0Uk5TABocHaan5urtebczhgAAAHJJREFUaN7t1bEJw1AMBFDFE6TzKp7A4AUM6dO49C4h8Ld1b7vI50j33gAHkkBXBQBw8phb4P2ssUX2WrKAT21ZwDcPiEeIlxifEQDdqBt1I0CPYQ2f6tTz1u+8eorlztZTbX8JWNIRxnSJv/elbgQArg4t7CWuiupUtgAAAABJRU5ErkJggg=="
+              />
+            </defs>
+          </svg>
+        </button>
+        <div
+          class="items-center justify-between hidden mt-5 w-full md:w-full"
+          id="navbar-sticky2"
+        >
+          <ul
+            class="flex flex-col justify-end items-end p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 gap-3 rtl:space-x-reverse lg:flex-row md:mt-0 md:border-0 md:bg-white md:w-full"
+          >
+            <li class="">
+              <a href="/register.html">
+                <button
+                  type="button"
+                  class="w-[45%] md:w-auto focus:outline-none text-black border bg-white hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-900"
+                >
+                  Register
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="/login.html">
+                <button
+                  type="button"
+                  class="w-[45%] md:w-auto focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-900"
+                >
+                  Log In
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="items-center justify-between hidden lg:flex lg:w-max">
+          <ul
+            class="flex flex-col justify-end items-end p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 gap-3 rtl:space-x-reverse lg:flex-row md:mt-0 md:border-0 md:bg-white md:w-full"
+          >
+            <li class="">
+              <a href="/register.html">
+                <button
+                  type="button"
+                  class="w-[45%] md:w-auto focus:outline-none text-black border bg-white hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-900"
+                >
+                  Register
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="/login.html">
+                <button
+                  type="button"
+                  class="w-[45%] md:w-auto focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:focus:ring-yellow-900"
+                >
+                  Log In
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="">
+      <div class="w-full">
+        <div
+          class="w-full relative"
+          style="
+            background-image: url(./imgs/hero1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+          "
+        >
+          <div
+            class="container flex flex-col items-start lg:gap-2 mx-auto pt-14 pb-44"
+          >
+            <h1
+              class="animate__fadeInUp animate__animated font-extrabold"
+              style="
+                color: var(--primary-1, #40b2e8);
+
+                font-size: 25px;
+                font-style: normal;
+                line-height: 150%; /* 30px */
+              "
+            >
+              build your future with
+            </h1>
+            <img
+              src="/imgs/logo.png"
+              alt=""
+              class="w-[215px] animate__fadeInUp animate__animated animate__delay-1s"
+            />
+            <h1
+              class="text2 text-left text-white w-full text-[40px] py-5 animate__fadeInUp animate__animated animate__delay-2s"
+            >
+              Best Programming Competition for <br />
+              the next-gen
+            </h1>
+            <div
+              class="w-full lg:w-[48%] flex justify-between gap-2 animate__fadeInUp animate__animated animate__delay-2s"
+            >
+              <button class="custom-button">
+                <span class="button-text text-white text-[1.2rem]"
+                  >Register now</span
+                >
+              </button>
+              <button
+                class="custom-button bg-white border border-orange-500 hover:bg-orange-800"
+              >
+                <span class="button-text font-semibold font-sans text-[1.2rem]">
+                  Discover Tracks
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div
+            style="background-image: url(./imgs/1.png); background-size: cover"
+            class=""
+          >
+            <div
+              class="container mx-auto flex justify-start lg:pt-24 flex-wrap flex-row-reverse"
+            >
+              <div class="w-full lg:w-[40%] flex justify-center relative">
+                <img
+                  src="./imgs/gif.gif"
+                  class=""
+                  alt=""
+                  style="width: 456.296px; height: 436.655px"
+                />
+                <img
+                  src="./imgs/1.1.png"
+                  alt=""
+                  class="absolute"
+                  style="width: 304.296px; height: 271.655px; top: 90px"
+                />
+              </div>
+              <div
+                class="flex flex-col justify-center text-left gap-4 w-full lg:w-[60%] p-8 lg:p-0"
+              >
+                <h1
+                  style="
+                    color: var(--text-color, #333);
+
+                    font-family: Roboto;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%; /* 42px */
+                  "
+                >
+                  The future is here
+                </h1>
+                <h2 class="text2">
+                  Mega Coders
+                  <span style="color: var(--primary-1, #40b2e8)"
+                    >Competition</span
+                  >
+                  in AI and Coding
+                </h2>
+                <div
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="500"
+                  class="w-full px-4 py-2 bg-sky-300 rounded-xl justify-start items-start gap-2.5 inline-flex"
+                >
+                  <div class="w-full">
+                    <span
+                      class="text-zinc-800 text-xl font-bold font-['Roboto'] leading-6"
+                      >Participate</span
+                    ><span
+                      class="text-zinc-800 text-xl font-normal font-['Roboto'] leading-6"
+                    >
+                      in the largest online programming competition in the
+                      Middle East for children from 6 to 18 years old.</span
+                    >
+                  </div>
+                </div>
+                <div
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="1000"
+                  class="w-full px-4 py-2 bg-sky-300 rounded-xl justify-start items-start gap-2.5 inline-flex"
+                >
+                  <div class="w-full">
+                    <span
+                      class="text-zinc-800 text-xl font-bold font-['Roboto'] leading-6"
+                      >Participate</span
+                    ><span
+                      class="text-zinc-800 text-xl font-normal font-['Roboto'] leading-6"
+                    >
+                      in the largest online programming competition in the
+                      Middle East for children from 6 to 18 years old.</span
+                    >
+                  </div>
+                </div>
+                <script></script>
+                <div
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-duration="1500"
+                  class="w-full px-2 py-2 bg-sky-300 rounded-xl justify-start items-start inline-flex"
+                >
+                  <div class="w-full">
+                    <span
+                      class="text-zinc-800 text-xl font-bold font-['Roboto'] leading-6"
+                      >Participate</span
+                    ><span
+                      class="text-zinc-800 text-xl font-normal font-['Roboto'] leading-6"
+                    >
+                      in the largest online programming competition in the
+                      Middle East for children from 6 to 18 years old.</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="background-image: url(./imgs/2.png)">
+          <div
+            class="container mx-auto justify-center items-center gap-[34px] pt-20 px-8 flex flex-col pb-20"
+          >
+            <h2 class="text2">The biggest competition in the middle east</h2>
+            <iframe
+              class="w-[60%] h-[400px] rounded-lg"
+              src="https://www.youtube.com/embed/hxOApe1P9dM"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div
+          class="pb-8"
+          style="
+            background-image: url(./imgs/3..png);
+            background-repeat: no-repeat;
+            background-position: center;
+          "
+        >
+          <div class="flex justify-end">
+            <img src="./imgs/favorite.gif" class="w-[120px] mr-80" alt="" />
+          </div>
+          <div class="container mx-auto">
+            <div
+              class="lg:w-[80%] 2xl:w-[62%] 2xl:h-[400px] mx-auto md:h-[371px] flex items-center gap-4 flex-col shadow-xl border shadow-blue-200 rounded-xl"
+              style="
+                background-image: url(./imgs/prizes\ section.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+              "
+            >
+              <h2 class="text2 p-2 pt-3 md:p-0">
+                Win Prizes That Inspire Your Children to Improve
+              </h2>
+              <h1 class="text3 px-2 md:p-0">
+                The winner will receive some precious prizes and mentorship (for
+                the top 15 participants).
+              </h1>
+              <h1 class="text3">Join now to be one of the winners</h1>
+              <div class="relative w-full hidden md:block">
+                <div
+                  class="absolute w-[14%] xl:top-0 lg:right-[15.5rem] xl:right-[17.2rem] md:right-[14.75rem] 2xl:right-[29rem] bg-blue-400 flex justify-center flex-col items-center rounded-lg gap-3 py-2"
+                >
+                  <h1 class="text4 text-[20px]">gadgets</h1>
+                  <img
+                    src="./imgs/gadgets 1.png"
+                    alt=""
+                    class="w-[84px] h-[87px]"
+                  />
+                </div>
+                <div
+                  class="bg-blue-400 w-[15%] absolute lg:top-[2.5rem] top-[1.2rem] 2xl:right-[17rem] right-[7.5rem] flex justify-center flex-col items-center rounded-lg gap-3 py-2"
+                >
+                  <h1 class="text4 text-[20px]">gadgets</h1>
+                  <img
+                    src="./imgs/image 86.png"
+                    alt=""
+                    class="w-[84px] h-[87px]"
+                  />
+                </div>
+                <div
+                  class="bg-blue-400 absolute lg:top-[7.5rem] md:right-[4rem] top-[5.5rem] lg:right-[4rem] 2xl:right-[9rem] flex justify-center flex-col items-center rounded-lg gap-3 px-2 py-2"
+                >
+                  <img
+                    src="./imgs/image 88.png"
+                    alt=""
+                    class="w-[41px] h-[40px]"
+                  />
+                  <h1 class="text4 text-[20px]">gadgets</h1>
+                </div>
+              </div>
+              <div
+                class="relative w-full flex flex-col justify-center mt-[21rem] mb-3 items-center gap-3 md:hidden"
+              >
+                <div
+                  class="w-[50%] bg-blue-400 flex justify-center flex-col items-center rounded-lg gap-3 py-2"
+                >
+                  <h1 class="text4 text-[20px]">gadgets</h1>
+                  <img
+                    src="./imgs/gadgets 1.png"
+                    alt=""
+                    class="w-[84px] h-[87px]"
+                  />
+                </div>
+                <div
+                  class="bg-blue-400 w-[50%] flex justify-center flex-col items-center rounded-lg gap-3 py-2"
+                >
+                  <h1 class="text4 text-[20px]">gadgets</h1>
+                  <img
+                    src="./imgs/image 86.png"
+                    alt=""
+                    class="w-[84px] h-[87px]"
+                  />
+                </div>
+                <div
+                  class="bg-blue-400 flex w-[50%] justify-center flex-col items-center rounded-lg gap-3 px-2 py-2"
+                >
+                  <img
+                    src="./imgs/image 88.png"
+                    alt=""
+                    class="w-[41px] h-[40px]"
+                  />
+                  <h1 class="text4 text-[20px]">gadgets</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-16"
+          style="
+            background-image: url(./imgs/4.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          "
+        >
+          <div class="container mx-auto flex items-center gap-4 flex-col">
+            <div class="flex justify-center items-center">
+              <h2 class="text2 px-8">Discover our tracks and be competitive</h2>
+              <img src="./imgs/responsive.gif" alt="" class="w-[120px]" />
+            </div>
+            <div
+              class="w-full justify-center flex items-center gap-20 flex-col lg:flex-row"
+            >
+              <div
+                class="custom-div w-[70%] lg:w-[30%] h-auto px-4 py-5 bg-blue-100 rounded-[14.88px] flex-col justify-between items-center inline-flex"
+              >
+                <div
+                  class="self-stretch grow shrink basis-0 justify-center items-center gap-[17px] flex-wrap flex"
+                >
+                  <img
+                    class="rounded-lg w-[100%] lg:w-[560px]"
+                    src="./imgs/4.1.png"
+                  />
+                  <div
+                    class="w-[100%] lg:w-[50%] grow shrink basis-0 self-stretch flex-col justify-center items-center inline-flex lg:gap-[20px]"
+                  >
+                    <div
+                      class="self-stretch grow shrink basis-0 flex-col justify-start items-start gap-[4.65px] flex"
+                    >
+                      <div
+                        class="self-stretch h-[42px] justify-center items-center gap-[18px] inline-flex"
+                      >
+                        <div
+                          class="grow shrink basis-0 h-[39px] justify-start items-center gap-[8.14px] flex"
+                        >
+                          <div
+                            class="text-zinc-800 text-[10px] md:text-[13px] font-bold font-['Lilita One'] leading-[39px] text-nowrap"
+                          >
+                            Track 1:
+                            <span
+                              class="text-orange-500 text-[10px] md:text-[13px] xl:text-[20px] font-bold font-['Lilita One'] leading-6"
+                              >Innovation in AI</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="w-[70px] text-orange-500 text-[12.97px] font-normal font-['Lilita One'] leading-tight"
+                        >
+                          400+ joined
+                        </div>
+                      </div>
+                      <div
+                        class="w-100 text-zinc-800 text-base font-medium font-['Roboto'] leading-normal"
+                      >
+                        This track focuses on transforming young innovators into
+                        tomorrow's entrepreneurs, emphasizing the UN's
+                        Sustainable Development Goals for students aged 6-18.
+                      </div>
+                    </div>
+                    <div
+                      class="self-stretch grow shrink basis-0 justify-center items-center gap-2 xl:gap-10 flex"
+                    >
+                      <div
+                        class="w-[50%] p-2 bg-orange-500 rounded-lg justify-center items-center gap-[10.81px] flex"
+                      >
+                        <button
+                          class="w-full text-white text-sm xl:text-lg font-semibold font-['Roboto'] text-nowrap"
+                        >
+                          Register now
+                        </button>
+                      </div>
+                      <div
+                        class="w-[50%] p-2 rounded-lg border border-orange-500 justify-center items-center gap-[10.81px] flex"
+                      >
+                        <a href="/trackone.html">
+                          <button
+                            class="w-full text-zinc-800 text-sm xl:text-lg font-semibold font-['Roboto']"
+                          >
+                            Know more
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="custom-div w-[70%] lg:w-[30%] h-auto px-4 py-3 bg-blue-100 rounded-[14.88px] flex-col justify-between items-center inline-flex"
+              >
+                <div
+                  class="self-stretch grow shrink basis-0 justify-center items-center gap-[17px] flex-wrap flex flex-row-reverse"
+                >
+                  <img
+                    class="rounded-lg w-[100%] lg:w-[560px]"
+                    src="./imgs/4.2.png"
+                  />
+                  <div
+                    class="w-[100%] lg:w-[50%] grow shrink basis-0 self-stretch flex-col justify-center items-center lg:gap-[20px] inline-flex"
+                  >
+                    <div
+                      class="self-stretch grow shrink basis-0 flex-col justify-start items-start gap-[4.65px] flex"
+                    >
+                      <div
+                        class="self-stretch h-[42px] justify-center items-center gap-[18px] inline-flex"
+                      >
+                        <div
+                          class="grow shrink basis-0 h-[39px] justify-start items-center gap-[8.14px] flex"
+                        >
+                          <div
+                            class="text-zinc-800 text-[10px] md:text-[13px] font-bold font-['Lilita One'] leading-[39px] text-nowrap"
+                          >
+                            Track 2:
+                            <span
+                              class="text-orange-500 text-[10px] md:text-[16px] xl:text-[20px] font-bold font-['Lilita One'] leading-6"
+                              >Coding</span
+                            >
+                          </div>
+                        </div>
+                        <div
+                          class="w-[70px] text-orange-500 text-[12.97px] font-normal font-['Lilita One'] leading-tight"
+                        >
+                          400+ joined
+                        </div>
+                      </div>
+                      <div
+                        class="w-100 text-zinc-800 text-base font-medium font-['Roboto'] leading-normal"
+                      >
+                        This track focuses on transforming young innovators into
+                        tomorrow’s entrepreneurs, emphasizing the UN’s
+                        Sustainable Development Goals for students aged 6-18.
+                      </div>
+                    </div>
+                    <div
+                      class="self-stretch grow shrink basis-0 justify-center items-center gap-2 xl:gap-10 flex"
+                    >
+                      <div
+                        class="w-[50%] p-2 bg-orange-500 rounded-lg justify-center items-center gap-[10.81px] flex"
+                      >
+                        <button
+                          class="w-full text-white text-sm xl:text-lg font-semibold font-['Roboto'] text-nowrap"
+                        >
+                          Register now
+                        </button>
+                      </div>
+                      <div
+                        class="w-[50%] p-2 rounded-lg border border-orange-500 justify-center items-center gap-[10.81px] flex"
+                      >
+                        <a href="/trackTwo.html">
+                          <button
+                            class="w-full text-zinc-800 text-sm xl:text-lg font-semibold font-['Roboto']"
+                          >
+                            Know more
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-full flex justify-start">
+              <img src="./imgs/responsive.gif" alt="" class="w-[120px]" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-16"
+          style="
+            background-image: url(./imgs/11.png);
+            background-size: cover;
+            background-position: top;
+          "
+        >
+          <div
+            class="container mx-auto flex items-center gap-4 flex-col border-4 rounded-lg p-4 border-orange-500 relative"
+          >
+            <img
+              src="./imgs/question 1.png"
+              alt=""
+              class="absolute top-3 right-3 md:top-6 md:right-6"
+            />
+            <div class="flex justify-center gap-5">
+              <h2 class="text2">how to Participate</h2>
+              <img
+                src="./imgs/share.gif"
+                alt=""
+                class="w-[60px] h-[60px] hidden md:block"
+              />
+            </div>
+            <div
+              class="flex justify-center gap-8 w-full flex-wrap items-start py-2"
+            >
+              <div class="w-[46%] lg:w-[15%]">
+                <div class="rounded-lg shadow-xl mb-8">
+                  <div
+                    data-aos="fade-down-right"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="200"
+                    class="bg-[#9DD1E9] flex justify-center items-center rounded-se-lg rounded-ss-lg"
+                  >
+                    <img
+                      src="./imgs/contact-form 1.png"
+                      alt=""
+                      class="w-[84px] h-[87px] my-12"
+                    />
+                  </div>
+                  <h1 class="p-3 text2 text-[23px] w-full text-center">
+                    1. Register
+                  </h1>
+                </div>
+                <h1>Register for mega coders</h1>
+              </div>
+              <div class="w-[46%] lg:w-[15%]">
+                <div class="rounded-lg shadow-xl mb-8">
+                  <div
+                    data-aos="fade-down-right"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="1000"
+                    data-aos-delay="500"
+                    class="bg-[#9DD1E9] flex justify-center items-center rounded-se-lg rounded-ss-lg"
+                  >
+                    <img
+                      src="./imgs/audio-book 1.png"
+                      alt=""
+                      class="w-[84px] h-[87px] my-12"
+                    />
+                  </div>
+                  <h1 class="p-3 text2 text-[23px] w-full text-center">
+                    2. Learn
+                  </h1>
+                </div>
+                <h1 class="text-wrap">
+                  Master coding through interactive bootcamps
+                </h1>
+              </div>
+              <div class="w-[46%] lg:w-[15%]">
+                <div class="rounded-lg shadow-xl mb-8">
+                  <div
+                    data-aos="fade-down-right"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="2000"
+                    data-aos-delay="1000"
+                    class="bg-[#9DD1E9] flex justify-center items-center rounded-se-lg rounded-ss-lg"
+                  >
+                    <img
+                      src="./imgs/professional-development 1.png"
+                      alt=""
+                      class="w-[84px] h-[87px] my-12"
+                    />
+                  </div>
+                  <h1 class="p-3 text2 text-[23px] w-full text-center">
+                    3. Compete
+                  </h1>
+                </div>
+                <h1>
+                  Get ready with your ideas and robot, submission closes on
+                  May15, 2024
+                </h1>
+              </div>
+              <div class="w-[46%] lg:w-[15%]">
+                <div class="rounded-lg shadow-xl mb-8">
+                  <div
+                    data-aos="fade-down-right"
+                    data-aos-easing="ease-in-sine"
+                    data-aos-duration="2000"
+                    data-aos-delay="2000"
+                    class="bg-[#9DD1E9] flex justify-center items-center rounded-se-lg rounded-ss-lg"
+                  >
+                    <img
+                      src="./imgs/goal 1.png"
+                      alt=""
+                      class="w-[84px] h-[87px] my-12"
+                    />
+                  </div>
+                  <h1 class="p-3 text2 text-[23px] w-full text-center">
+                    4. Win
+                  </h1>
+                </div>
+                <h1>Show your skills and aim for the top!</h1>
+              </div>
+            </div>
+            <h1 class="w-full text-center font-bold">
+              Megacoders International participation fees are $25
+              USD (equivalent to 700 pound in egypt)Scholarships are available
+              for underrepresented students. contact megacoders.com or an
+              authorized partner for details.
+            </h1>
+            <div
+              class="w-11/12 md:w-[20%] px-[10.81px] py-[4.32px] bg-orange-500 rounded-2xl justify-center items-center gap-[10.81px] flex"
+            >
+              <button
+                class="w-[111px] text-white text-sm lg:text-lg font-semibold font-['Roboto'] leading-relaxed"
+              >
+                Register now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-16"
+          style="
+            background-image: url(./imgs/5.png);
+            background-repeat: no-repeat;
+            background-position: top;
+          "
+        >
+          <div class="container mx-auto flex items-center gap-4 flex-col">
+            <h2 class="text2">Competition Guidelines</h2>
+            <h1 class="text1 px-8">
+              We have 3 age groups and you can participate in anyone:
+            </h1>
+            <div
+              class="flex justify-around w-full flex-wrap items-center py-16"
+            >
+              <div
+                class="w-80 h-64 px-16 py-6 bg-white rounded-xl flex-col justify-start items-center gap-2.5 inline-flex"
+              >
+                <div
+                  class="text-zinc-800 text-4xl font-normal font-['Lilita One'] leading-10"
+                >
+                  Elementary
+                </div>
+                <div class="w-48 h-6 relative">
+                  <div
+                    class="w-48 h-px left-[-0px] top-[11.59px] absolute border-2 border-sky-300"
+                  ></div>
+                  <div
+                    class="w-36 h-6 left-[24.15px] top-[-0px] absolute justify-start items-center gap-12 inline-flex"
+                  >
+                    <div class="w-6 h-6 bg-orange-500 rounded-full"></div>
+                    <div class="imgowl h-3.5 bg-sky-300 rounded-full"></div>
+                    <div class="imgowl h-3.5 bg-sky-300 rounded-full"></div>
+                  </div>
+
+                  <img
+                    class="w-10 h-10 left-[-29.95px] top-[-10.63px] absolute"
+                    src="./imgs/5.2.png"
+                  />
+                  <img
+                    class="w-10 h-10 left-[194.19px] top-[-12.56px] absolute"
+                    src="./imgs/5.1.png"
+                  />
+                </div>
+                <div
+                  class="text-orange-500 text-2xl font-semibold font-['Roboto'] leading-10"
+                >
+                  from 6-9 years
+                </div>
+                <div
+                  class="text-zinc-800 text-xs font-normal font-['Roboto'] leading-tight"
+                >
+                  if your age is from 6 t0 9 years
+                </div>
+                <button
+                  class="hover:bg-blue-500 px-12 py-2 bg-orange-500 rounded-lg justify-center items-center gap-2.5 inline-flex"
+                >
+                  <div
+                    class="text-white text-xl font-medium font-sans text-nowrap"
+                  >
+                    Apply Now
+                  </div>
+                </button>
+              </div>
+              <div
+                class="w-80 h-64 px-16 py-6 bg-white rounded-xl flex-col justify-start items-center gap-2.5 inline-flex"
+              >
+                <div
+                  class="text-zinc-800 text-4xl font-normal font-['Lilita One'] leading-10"
+                >
+                  Elementary
+                </div>
+                <div class="w-48 h-6 relative">
+                  <div
+                    class="w-48 h-px left-[-0px] top-[11.59px] absolute border-2 border-sky-300"
+                  ></div>
+                  <div
+                    class="w-36 h-6 left-[24.15px] top-[-0px] absolute justify-start items-center gap-12 inline-flex"
+                  >
+                    <div class="w-6 h-6 bg-orange-500 rounded-full"></div>
+                    <div class="imgowl h-3.5 bg-sky-300 rounded-full"></div>
+                    <div class="imgowl h-3.5 bg-sky-300 rounded-full"></div>
+                  </div>
+
+                  <img
+                    class="w-10 h-10 left-[-29.95px] top-[-10.63px] absolute"
+                    src="./imgs/5.2.png"
+                  />
+                  <img
+                    class="w-10 h-10 left-[194.19px] top-[-12.56px] absolute"
+                    src="./imgs/5.1.png"
+                  />
+                </div>
+                <div
+                  class="text-orange-500 text-2xl font-semibold font-['Roboto'] leading-10"
+                >
+                  from 6-9 years
+                </div>
+                <div
+                  class="text-zinc-800 text-xs font-normal font-['Roboto'] leading-tight"
+                >
+                  if your age is from 6 t0 9 years
+                </div>
+                <button
+                  class="hover:bg-blue-500 px-12 py-2 bg-orange-500 rounded-lg justify-center items-center gap-2.5 inline-flex"
+                >
+                  <div
+                    class="text-white text-xl fotext-white text-xl font-medium font-sans text-nowrap"
+                  >
+                    Apply Now
+                  </div>
+                </button>
+              </div>
+              <div
+                class="w-80 h-64 px-16 py-6 bg-white rounded-xl flex-col justify-start items-center gap-2.5 inline-flex"
+              >
+                <div
+                  class="text-zinc-800 text-4xl font-normal font-['Lilita One'] leading-10"
+                >
+                  Elementary
+                </div>
+                <div class="w-48 h-6 relative">
+                  <div
+                    class="w-48 h-px left-[-0px] top-[11.59px] absolute border-2 border-sky-300"
+                  ></div>
+                  <div
+                    class="w-36 h-6 left-[24.15px] top-[-0px] absolute justify-start items-center gap-12 inline-flex"
+                  >
+                    <div class="w-6 h-6 bg-orange-500 rounded-full"></div>
+                    <div class="imgowl h-3.5 bg-sky-300 rounded-full"></div>
+                    <div class="imgowl h-3.5 bg-sky-300 rounded-full"></div>
+                  </div>
+
+                  <img
+                    class="w-10 h-10 left-[-29.95px] top-[-10.63px] absolute"
+                    src="./imgs/5.2.png"
+                  />
+                  <img
+                    class="w-10 h-10 left-[194.19px] top-[-12.56px] absolute"
+                    src="./imgs/5.1.png"
+                  />
+                </div>
+                <div
+                  class="text-orange-500 text-2xl font-semibold font-['Roboto'] leading-10"
+                >
+                  from 6-9 years
+                </div>
+                <div
+                  class="text-zinc-800 text-xs font-normal font-['Roboto'] leading-tight"
+                >
+                  if your age is from 6 t0 9 years
+                </div>
+                <button
+                  class="hover:bg-blue-500 px-12 py-2 bg-orange-500 rounded-lg justify-center items-center gap-2.5 inline-flex"
+                >
+                  <div
+                    class="text-white text-xl fotext-white text-xl font-medium font-sans text-nowrap"
+                  >
+                    Apply Now
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="w-[80%] h-px border-2 border-blue-300"></div>
+          </div>
+        </div>
+        <div
+          class="pt-16"
+          style="
+            background-image: url(./imgs/6.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+          "
+        >
+          <div
+            class="container mx-auto flex items-center gap-8 flex-col text-center px-8 py-10"
+          >
+            <h2 class="text2">
+              you have to read these guidelines before applying
+            </h2>
+            <div
+              class="w-[85%] text-zinc-800 text-2xl font-medium font-['Roboto'] leading-6"
+            >
+              <ol class="" style="list-style: auto">
+                <li>
+                  You can participate as an individual or in a team of two to
+                  three students, along with one mentor.
+                </li>
+                <li>
+                  In the case of a team of two or three, all members should
+                  belong to the same age group, or if the age group is
+                  different, then the age group should be selected as per the
+                  age of the elder one.
+                </li>
+                <li>
+                  Only 1 project can be submitted per team in Track 1. If you
+                  want to submit more than one project, then you need to do
+                  another registration.
+                </li>
+                <li>
+                  If the individual or the team wishes to participate in both
+                  tracks, registration has to be done separately for both Tracks
+                </li>
+              </ol>
+            </div>
+            <button
+              class="hover:bg-blue-500 w-72 h-14 py-3 bg-orange-500 rounded-xl border justify-center items-center gap-2 inline-flex"
+            >
+              <div
+                class="text-white text-lg font-normal font-['Lilita One'] leading-7"
+              >
+                Read General Guidelines
+              </div>
+            </button>
+          </div>
+        </div>
+        <div
+          class="pt-16"
+          style="
+            background-image: url(./imgs/7.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+          "
+        >
+          <div
+            class="container mx-auto flex items-center gap-24 flex-col text-center px-8"
+          >
+            <div class="flex justify-center gap-12 w-full">
+              <img src="./imgs/7.1.png" alt="" />
+
+              <h2 class="text2">
+                we aim to develop the minds of the new generation
+              </h2>
+            </div>
+            <div class="hover-container w-full">
+              <div
+                class="flex lg:justify-around w-full flex-wrap items-end justify-center"
+              >
+                <div class="flex flex-col py-2">
+                  <img
+                    src="./imgs/7.2.png"
+                    alt=""
+                    class="md:border-r pr-9 border-yellow-600"
+                  />
+                  <div class="custom-div2">
+                    <h1 class="text3">aim to impact</h1>
+                    <h2 class="text2 counter">100 <span>+</span></h2>
+                    <h1 class="text3">learner</h1>
+                  </div>
+                </div>
+                <div class="flex flex-col py-2">
+                  <div class="md:border-r pr-9 border-yellow-600 custom-div3">
+                    <img src="./imgs/7.2.png" alt="" />
+                  </div>
+                  <div class="custom-div2">
+                    <h1 class="text3">aim to impact</h1>
+                    <h2 class="text2 counter">100 <span>+</span></h2>
+                    <h1 class="text3">learner</h1>
+                  </div>
+                </div>
+                <div class="flex flex-col py-2">
+                  <img
+                    src="./imgs/7.2.png"
+                    alt=""
+                    class="md:md:border-r pr-9 border-yellow-600"
+                  />
+                  <div class="custom-div2">
+                    <h1 class="text3">aim to impact</h1>
+                    <h2 class="text2 counter">100 <span>+</span></h2>
+                    <h1 class="text3">learner</h1>
+                  </div>
+                </div>
+                <div class="flex flex-col py-2">
+                  <img src="./imgs/7.2.png" alt="" class="" />
+                  <div class="custom-div2">
+                    <h1 class="text3">aim to impact</h1>
+                    <h2 class="text2 counter">100 <span>+</span></h2>
+                    <h1 class="text3">learner</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script>
+              // Function to animate the number counter
+              function animateCounter(element, target, duration) {
+                let start = parseInt(element.innerText);
+                let increment = target / 4; // Increment calculated to reach the target value in the specified duration
+                console.log(increment);
+                let intervalId; // Store the interval ID
+
+                // Function to update the counter
+                function updateCounter() {
+                  let value = parseInt(element.innerText) + increment;
+                  if (
+                    (increment > 0 && value <= target) ||
+                    (increment < 0 && value >= target)
+                  ) {
+                    element.innerText = Math.round(value); // Round the value to avoid floating point precision issues
+                  } else {
+                    clearInterval(intervalId); // Stop the animation when reaching the target
+                  }
+                }
+
+                // Start the animation
+                intervalId = setInterval(updateCounter, 100); // Assuming 60fps
+
+                // Reset the counter when mouse leaves the container
+                element
+                  .closest(".hover-container")
+                  .addEventListener("mouseleave", function () {
+                    clearInterval(intervalId); // Stop the animation
+                    element.innerText = start; // Reset counter to start value
+                  });
+              }
+
+              // Get all elements with the class 'counter'
+              const counterElements = document.querySelectorAll(".counter");
+
+              // Attach hover event listener to each counter
+              counterElements.forEach((element) => {
+                // Get the original value of the counter
+                const originalValue = parseInt(element.innerText);
+                // Attach hover event listener to each counter
+                element.addEventListener("mouseenter", function () {
+                  // Start the animation for this counter element
+                  animateCounter(element, originalValue * 4, 1000); // Increase to four times the original value in 1 second (1000ms)
+                });
+              });
+            </script>
+          </div>
+        </div>
+
+        <div
+          class="pt-16"
+          style="
+            background-image: url(./imgs/7.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+          "
+        >
+          <div
+            class="container mx-auto flex items-center gap-24 flex-col text-center"
+          >
+            <h2 class="text2">What our customers say about us</h2>
+            <div class="owl-carousel owl-theme owl-loaded">
+              <div class="owl-stage-outer">
+                <div class="owl-stage">
+                  <div class="owl-item">
+                    <div
+                      class="mx-auto w-60 h-80 relative bg-gradient-to-r from-white to-white rounded-xl shadow border border-sky-400 backdrop-blur-lg"
+                    >
+                      <img class="w-full rounded-lg" src="./imgs/8.png" />
+                      <div
+                        class="left-[42px] top-[164px] absolute text-zinc-800 text-3xl font-normal font-['Lilita One'] leading-10"
+                      >
+                        Amir samir
+                      </div>
+                      <div
+                        class="w-36 left-[44px] top-[218px] absolute text-black text-base font-normal font-['Roboto'] leading-normal"
+                      >
+                        megacoders help my son a lot in coding
+                      </div>
+                      <img
+                        class="imgowl h-3.5 left-[35px] top-[273px] absolute origin-top-left -rotate-180"
+                        src="./imgs/8.1.png"
+                      />
+                      <img
+                        class="imgowl h-3.5 left-[201px] top-[212px] absolute"
+                        src="./imgs/8.2.png"
+                      />
+                      <div
+                        class="left-[67px] top-[273px] absolute justify-start items-start gap-1.5 inline-flex"
+                      >
+                        <div class="flex items-center">
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="owl-item">
+                    <div
+                      class="mx-auto w-60 h-80 relative bg-gradient-to-r from-white to-white rounded-xl shadow border border-sky-400 backdrop-blur-lg"
+                    >
+                      <img class="w-full rounded-lg" src="./imgs/8.png" />
+                      <div
+                        class="left-[42px] top-[164px] absolute text-zinc-800 text-3xl font-normal font-['Lilita One'] leading-10"
+                      >
+                        Amir samir
+                      </div>
+                      <div
+                        class="w-36 left-[44px] top-[218px] absolute text-black text-base font-normal font-['Roboto'] leading-normal"
+                      >
+                        megacoders help my son a lot in coding
+                      </div>
+                      <img
+                        class="imgowl h-3.5 left-[35px] top-[273px] absolute origin-top-left -rotate-180"
+                        src="./imgs/8.1.png"
+                      />
+                      <img
+                        class="imgowl h-3.5 left-[201px] top-[212px] absolute"
+                        src="./imgs/8.2.png"
+                      />
+                      <div
+                        class="left-[67px] top-[273px] absolute justify-start items-start gap-1.5 inline-flex"
+                      >
+                        <div class="flex items-center">
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div
+                      class="mx-auto w-60 h-80 relative bg-gradient-to-r from-white to-white rounded-xl shadow border border-sky-400 backdrop-blur-lg"
+                    >
+                      <img class="w-full rounded-lg" src="./imgs/8.png" />
+                      <div
+                        class="left-[42px] top-[164px] absolute text-zinc-800 text-3xl font-normal font-['Lilita One'] leading-10"
+                      >
+                        Amir samir
+                      </div>
+                      <div
+                        class="w-36 left-[44px] top-[218px] absolute text-black text-base font-normal font-['Roboto'] leading-normal"
+                      >
+                        megacoders help my son a lot in coding
+                      </div>
+                      <img
+                        class="imgowl h-3.5 left-[35px] top-[273px] absolute origin-top-left -rotate-180"
+                        src="./imgs/8.1.png"
+                      />
+                      <img
+                        class="imgowl h-3.5 left-[201px] top-[212px] absolute"
+                        src="./imgs/8.2.png"
+                      />
+                      <div
+                        class="left-[67px] top-[273px] absolute justify-start items-start gap-1.5 inline-flex"
+                      >
+                        <div class="flex items-center">
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div
+                      class="mx-auto w-60 h-80 relative bg-gradient-to-r from-white to-white rounded-xl shadow border border-sky-400 backdrop-blur-lg"
+                    >
+                      <img class="w-full rounded-lg" src="./imgs/8.png" />
+                      <div
+                        class="left-[42px] top-[164px] absolute text-zinc-800 text-3xl font-normal font-['Lilita One'] leading-10"
+                      >
+                        Amir samir
+                      </div>
+                      <div
+                        class="w-36 left-[44px] top-[218px] absolute text-black text-base font-normal font-['Roboto'] leading-normal"
+                      >
+                        megacoders help my son a lot in coding
+                      </div>
+                      <img
+                        class="imgowl h-3.5 left-[35px] top-[273px] absolute origin-top-left -rotate-180"
+                        src="./imgs/8.1.png"
+                      />
+                      <img
+                        class="imgowl h-3.5 left-[201px] top-[212px] absolute"
+                        src="./imgs/8.2.png"
+                      />
+                      <div
+                        class="left-[67px] top-[273px] absolute justify-start items-start gap-1.5 inline-flex"
+                      >
+                        <div class="flex items-center">
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div
+                      class="mx-auto w-60 h-80 relative bg-gradient-to-r from-white to-white rounded-xl shadow border border-sky-400 backdrop-blur-lg"
+                    >
+                      <img class="w-full rounded-lg" src="./imgs/8.png" />
+                      <div
+                        class="left-[42px] top-[164px] absolute text-zinc-800 text-3xl font-normal font-['Lilita One'] leading-10"
+                      >
+                        Amir samir
+                      </div>
+                      <div
+                        class="w-36 left-[44px] top-[218px] absolute text-black text-base font-normal font-['Roboto'] leading-normal"
+                      >
+                        megacoders help my son a lot in coding
+                      </div>
+                      <img
+                        class="imgowl h-3.5 left-[35px] top-[273px] absolute origin-top-left -rotate-180"
+                        src="./imgs/8.1.png"
+                      />
+                      <img
+                        class="imgowl h-3.5 left-[201px] top-[212px] absolute"
+                        src="./imgs/8.2.png"
+                      />
+                      <div
+                        class="left-[67px] top-[273px] absolute justify-start items-start gap-1.5 inline-flex"
+                      >
+                        <div class="flex items-center">
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div
+                      class="mx-auto w-60 h-80 relative bg-gradient-to-r from-white to-white rounded-xl shadow border border-sky-400 backdrop-blur-lg"
+                    >
+                      <img class="w-full rounded-lg" src="./imgs/8.png" />
+                      <div
+                        class="left-[42px] top-[164px] absolute text-zinc-800 text-3xl font-normal font-['Lilita One'] leading-10"
+                      >
+                        Amir samir
+                      </div>
+                      <div
+                        class="w-36 left-[44px] top-[218px] absolute text-black text-base font-normal font-['Roboto'] leading-normal"
+                      >
+                        megacoders help my son a lot in coding
+                      </div>
+                      <img
+                        class="imgowl h-3.5 left-[35px] top-[273px] absolute origin-top-left -rotate-180"
+                        src="./imgs/8.1.png"
+                      />
+                      <img
+                        class="imgowl h-3.5 left-[201px] top-[212px] absolute"
+                        src="./imgs/8.2.png"
+                      />
+                      <div
+                        class="left-[67px] top-[273px] absolute justify-start items-start gap-1.5 inline-flex"
+                      >
+                        <div class="flex items-center">
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div
+                      class="mx-auto w-60 h-80 relative bg-gradient-to-r from-white to-white rounded-xl shadow border border-sky-400 backdrop-blur-lg"
+                    >
+                      <img class="w-full rounded-lg" src="./imgs/8.png" />
+                      <div
+                        class="left-[42px] top-[164px] absolute text-zinc-800 text-3xl font-normal font-['Lilita One'] leading-10"
+                      >
+                        Amir samir
+                      </div>
+                      <div
+                        class="w-36 left-[44px] top-[218px] absolute text-black text-base font-normal font-['Roboto'] leading-normal"
+                      >
+                        megacoders help my son a lot in coding
+                      </div>
+                      <img
+                        class="imgowl h-3.5 left-[35px] top-[273px] absolute origin-top-left -rotate-180"
+                        src="./imgs/8.1.png"
+                      />
+                      <img
+                        class="imgowl h-3.5 left-[201px] top-[212px] absolute"
+                        src="./imgs/8.2.png"
+                      />
+                      <div
+                        class="left-[67px] top-[273px] absolute justify-start items-start gap-1.5 inline-flex"
+                      >
+                        <div class="flex items-center">
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div
+                      class="mx-auto w-60 h-80 relative bg-gradient-to-r from-white to-white rounded-xl shadow border border-sky-400 backdrop-blur-lg"
+                    >
+                      <img class="w-full rounded-lg" src="./imgs/8.png" />
+                      <div
+                        class="left-[42px] top-[164px] absolute text-zinc-800 text-3xl font-normal font-['Lilita One'] leading-10"
+                      >
+                        Amir samir
+                      </div>
+                      <div
+                        class="w-36 left-[44px] top-[218px] absolute text-black text-base font-normal font-['Roboto'] leading-normal"
+                      >
+                        megacoders help my son a lot in coding
+                      </div>
+                      <img
+                        class="imgowl h-3.5 left-[35px] top-[273px] absolute origin-top-left -rotate-180"
+                        src="./imgs/8.1.png"
+                      />
+                      <img
+                        class="imgowl h-3.5 left-[201px] top-[212px] absolute"
+                        src="./imgs/8.2.png"
+                      />
+                      <div
+                        class="left-[67px] top-[273px] absolute justify-start items-start gap-1.5 inline-flex"
+                      >
+                        <div class="flex items-center">
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div
+                      class="mx-auto w-60 h-80 relative bg-gradient-to-r from-white to-white rounded-xl shadow border border-sky-400 backdrop-blur-lg"
+                    >
+                      <img class="w-full rounded-lg" src="./imgs/8.png" />
+                      <div
+                        class="left-[42px] top-[164px] absolute text-zinc-800 text-3xl font-normal font-['Lilita One'] leading-10"
+                      >
+                        Amir samir
+                      </div>
+                      <div
+                        class="w-36 left-[44px] top-[218px] absolute text-black text-base font-normal font-['Roboto'] leading-normal"
+                      >
+                        megacoders help my son a lot in coding
+                      </div>
+                      <img
+                        class="imgowl h-3.5 left-[35px] top-[273px] absolute origin-top-left -rotate-180"
+                        src="./imgs/8.1.png"
+                      />
+                      <img
+                        class="imgowl h-3.5 left-[201px] top-[212px] absolute"
+                        src="./imgs/8.2.png"
+                      />
+                      <div
+                        class="left-[67px] top-[273px] absolute justify-start items-start gap-1.5 inline-flex"
+                      >
+                        <div class="flex items-center">
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="owl-item">
+                    <div
+                      class="mx-auto w-60 h-80 relative bg-gradient-to-r from-white to-white rounded-xl shadow border border-sky-400 backdrop-blur-lg"
+                    >
+                      <img class="w-full rounded-lg" src="./imgs/8.png" />
+                      <div
+                        class="left-[42px] top-[164px] absolute text-zinc-800 text-3xl font-normal font-['Lilita One'] leading-10"
+                      >
+                        Amir samir
+                      </div>
+                      <div
+                        class="w-36 left-[44px] top-[218px] absolute text-black text-base font-normal font-['Roboto'] leading-normal"
+                      >
+                        megacoders help my son a lot in coding
+                      </div>
+                      <img
+                        class="imgowl h-3.5 left-[35px] top-[273px] absolute origin-top-left -rotate-180"
+                        src="./imgs/8.1.png"
+                      />
+                      <img
+                        class="imgowl h-3.5 left-[201px] top-[212px] absolute"
+                        src="./imgs/8.2.png"
+                      />
+                      <div
+                        class="left-[67px] top-[273px] absolute justify-start items-start gap-1.5 inline-flex"
+                      >
+                        <div class="flex items-center">
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-yellow-300 me-1"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                          <svg
+                            class="w-4 h-4 text-gray-300 me-1 dark:text-gray-500"
+                            aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="currentColor"
+                            viewBox="0 0 22 20"
+                          >
+                            <path
+                              d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="pt-16"
+          style="
+            background-image: url(./imgs/9.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+          "
+        >
+          <div
+            class="container mx-auto flex items-center gap-24 flex-col text-center"
+          >
+            <div class="flex gap-6">
+              <img src="./imgs/9.1.png" alt="" />
+              <h1 class="text2">MegaCoders worldwide empact</h1>
+            </div>
+            <img
+              src="./imgs/2024-05-0801-30-30-ezgif.com-video-to-gif-converter.gif"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- <div class="bg-white w-full">
+          <div class="container mx-auto py-16">
+            <div
+              class="w-[90%] justify-center items-start flex mx-auto flex-wrap"
+            >
+              <img
+                class="w-full md:w-[30%] rounded-tl-xl rounded-bl-xl"
+                src="./imgs/9.2.png"
+              />
+              <div
+                class="w-full flex justify-center lg:w-[55%] relative bg-gray-50 rounded-tr-xl rounded-br-xl flex-col items-center gap-2 p-2"
+              >
+                <div
+                  class="text-zinc-800 text-sm xl:text-lg font-extrabold font-['Lilita One']"
+                >
+                  Your kid is talented and he loves coding!
+                </div>
+                <div
+                  class="w-[60%] text-center text-zinc-800 text-xl font-thin font-['Roboto']"
+                >
+                  this is his chance to compete and win his first trophy in the
+                  largest programming competition
+                </div>
+
+                <button
+                  class="text-white text-[15.14px] bg-orange-500 p-3 px-20 rounded-xl text-xl box-border font-medium font-sans text-nowrap"
+                >
+                  Register your team now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <div class="bg-white w-full">
+          <div class="container mx-auto py-16">
+            <div
+              class="md:w-[90%] justify-center items-center flex mx-auto flex-wrap bg-gray-50 rounded-xl"
+            >
+              <div class="md:w-1/3 flex items-center justify-center">
+                <img
+                  class="rounded-tl-xl rounded-bl-xl box-border"
+                  src="./imgs/9.2.png"
+                />
+              </div>
+              <div
+                class="flex justify-center lg:w-[50%] relative flex-col items-start gap-4 p-8"
+              >
+                <div
+                  class="text2 text-2xl font-extrabold font-['Lilita One'] text-left"
+                >
+                  Your kid is talented and he loves coding!
+                </div>
+                <div
+                  class="w-full text-left text-black text-xl font-thin font-['Roboto']"
+                >
+                  this is his chance to compete and win his first trophy in the
+                  largest programming competition
+                </div>
+
+                <button
+                  class="text-white text-[15.14px] bg-orange-500 p-3 rounded-xl text-xl box-border font-medium font-sans text-nowrap"
+                >
+                  Register your team now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-16"
+          style="
+            background-image: url(./imgs/FOOTER.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+          "
+        >
+          <div class="w-full flex justify-around flex-wrap">
+            <div class="md:w-[10%] flex flex-col justify-center">
+              <img src="./imgs/logo.png" alt="" />
+              <h1
+                class="text-center py-5"
+                style="
+                  color: #333;
+                  font-family: 'Lilita One';
+                  font-size: 25px;
+                  font-style: normal;
+                  font-weight: 400;
+                  border-bottom: 1.212px solid #fb7e08;
+                "
+              >
+                Quick Links
+              </h1>
+              <div
+                class="text-zinc-800 text-base font-normal font-['Lilita One'] leading-tight text-left pl-12 py-4"
+                style="
+                  color: var(--text-color, #333);
+                  font-family: 'Lilita One';
+                  font-size: 16px;
+                  font-style: normal;
+                  font-weight: 400;
+                  line-height: 25px; /* 20.32px */
+                "
+              >
+                Home <br />About<br />Community<br />Services<br />Contact Us<br />
+              </div>
+            </div>
+            <div class="md:w-[16%] lg:pt-28">
+              <h1
+                class="text-center py-5"
+                style="
+                  color: #333;
+                  font-family: 'Lilita One';
+                  font-size: 25px;
+                  font-style: normal;
+                  font-weight: 400;
+                  border-bottom: 1.212px solid #fb7e08;
+                "
+              >
+                Contact Info
+              </h1>
+              <div class="flex justify-between py-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                >
+                  <path
+                    d="M4.51541 4.84082H21.8896C23.0841 4.84082 24.0614 5.81812 24.0614 7.0126V20.0433C24.0614 21.2378 23.0841 22.2151 21.8896 22.2151H4.51541C3.32093 22.2151 2.34363 21.2378 2.34363 20.0433V7.0126C2.34363 5.81812 3.32093 4.84082 4.51541 4.84082Z"
+                    stroke="#FB7E08"
+                    stroke-width="2.17178"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M24.0614 7.0127L13.2025 14.6139L2.34363 7.0127"
+                    stroke="#FB7E08"
+                    stroke-width="2.17178"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <h1
+                  style="
+                    color: var(--text-color, #333);
+                    font-family: 'Lilita One';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 25px; /* 20.32px */
+                  "
+                >
+                  Contact@Megacoders.Com <br />
+                  Contact.MEGACODERS@Gmail.Com
+                </h1>
+              </div>
+              <div class="flex justify-start py-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="27"
+                  height="27"
+                  viewBox="0 0 27 27"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_951_58863)">
+                    <path
+                      d="M22.8037 10.8589C22.8037 18.4602 13.0307 24.9755 13.0307 24.9755C13.0307 24.9755 3.25769 18.4602 3.25769 10.8589C3.25769 8.26698 4.28734 5.78118 6.12014 3.94838C7.95293 2.11559 10.4387 1.08594 13.0307 1.08594C15.6227 1.08594 18.1085 2.11559 19.9413 3.94838C21.774 5.78118 22.8037 8.26698 22.8037 10.8589Z"
+                      stroke="#FB7E08"
+                      stroke-width="2.17178"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M13.0307 14.1164C14.8299 14.1164 16.2884 12.6579 16.2884 10.8587C16.2884 9.05958 14.8299 7.60107 13.0307 7.60107C11.2316 7.60107 9.77307 9.05958 9.77307 10.8587C9.77307 12.6579 11.2316 14.1164 13.0307 14.1164Z"
+                      stroke="#FB7E08"
+                      stroke-width="2.17178"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_951_58863">
+                      <rect width="26.0613" height="26.0613" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <h1
+                  class="text-left pl-9"
+                  style="
+                    color: var(--text-color, #333);
+                    font-family: 'Lilita One';
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 25px; /* 20.32px */
+                  "
+                >
+                  Alexandria , EYGPT
+                </h1>
+              </div>
+            </div>
+            <div class="md:w-[13%] pt-28">
+              <h1
+                class="text-center py-5 w-full"
+                style="
+                  color: #333;
+                  font-family: 'Lilita One';
+                  font-size: 25px;
+                  font-style: normal;
+                  font-weight: 400;
+                  border-bottom: 1.212px solid #fb7e08;
+                "
+              >
+                Follow us on
+              </h1>
+              <div class="flex justify-between py-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_951_58845)">
+                    <path
+                      d="M28.5563 14.4953C28.5563 6.61442 22.1675 0.225586 14.2866 0.225586C6.40568 0.225586 0.0168457 6.61442 0.0168457 14.4953C0.0168457 21.6177 5.23511 27.5213 12.0569 28.5917V18.6202H8.43377V14.4953H12.0569V11.3515C12.0569 7.77517 14.1874 5.79971 17.4469 5.79971C19.0081 5.79971 20.6411 6.07841 20.6411 6.07841V9.59011H18.8418C17.0691 9.59011 16.5162 10.6901 16.5162 11.8186V14.4953H20.4739L19.8412 18.6202H16.5162V28.5917C23.3381 27.5213 28.5563 21.6178 28.5563 14.4953Z"
+                      fill="#1877F2"
+                    />
+                    <path
+                      d="M19.8413 18.6203L20.4739 14.4954H16.5163V11.8187C16.5163 10.6901 17.0692 9.59021 18.8418 9.59021H20.6412V6.07851C20.6412 6.07851 19.0082 5.7998 17.4469 5.7998C14.1874 5.7998 12.057 7.77527 12.057 11.3516V14.4954H8.43384V18.6203H12.057V28.5918C12.7946 28.7074 13.5401 28.7654 14.2867 28.7652C15.0333 28.7654 15.7787 28.7074 16.5163 28.5918V18.6203H19.8413Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_951_58845">
+                      <rect
+                        width="28.5395"
+                        height="28.5395"
+                        fill="white"
+                        transform="translate(0.0168457 0.225586)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="29"
+                  viewBox="0 0 30 29"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_951_58848)">
+                    <path
+                      d="M22.5717 0.225586H7.41013C3.71593 0.225586 0.721191 3.22033 0.721191 6.91453V22.0761C0.721191 25.7703 3.71593 28.7651 7.41013 28.7651H22.5717C26.2659 28.7651 29.2607 25.7703 29.2607 22.0761V6.91453C29.2607 3.22033 26.2659 0.225586 22.5717 0.225586Z"
+                      fill="url(#paint0_radial_951_58848)"
+                    />
+                    <path
+                      d="M22.5717 0.225586H7.41013C3.71593 0.225586 0.721191 3.22033 0.721191 6.91453V22.0761C0.721191 25.7703 3.71593 28.7651 7.41013 28.7651H22.5717C26.2659 28.7651 29.2607 25.7703 29.2607 22.0761V6.91453C29.2607 3.22033 26.2659 0.225586 22.5717 0.225586Z"
+                      fill="url(#paint1_radial_951_58848)"
+                    />
+                    <path
+                      d="M14.9918 3.34766C11.9641 3.34766 11.5841 3.36092 10.395 3.41499C9.20818 3.4694 8.39803 3.65724 7.68923 3.93294C6.9559 4.21766 6.33394 4.5986 5.71432 5.21844C5.09414 5.83817 4.71321 6.46013 4.42759 7.19313C4.15111 7.90216 3.96304 8.71263 3.90964 9.89892C3.85646 11.0881 3.84253 11.4683 3.84253 14.496C3.84253 17.5238 3.85591 17.9026 3.90986 19.0916C3.96449 20.2785 4.15234 21.0886 4.42781 21.7974C4.71276 22.5308 5.0937 23.1527 5.71354 23.7723C6.33305 24.3925 6.95501 24.7743 7.68778 25.0591C8.39714 25.3348 9.2074 25.5226 10.394 25.577C11.5832 25.6311 11.9629 25.6444 14.9904 25.6444C18.0184 25.6444 18.3972 25.6311 19.5863 25.577C20.7731 25.5226 21.5842 25.3348 22.2935 25.0591C23.0265 24.7743 23.6476 24.3925 24.267 23.7723C24.8872 23.1527 25.268 22.5308 25.5537 21.7978C25.8277 21.0886 26.0159 20.2783 26.0717 19.0919C26.1251 17.9028 26.139 17.5238 26.139 14.496C26.139 11.4683 26.1251 11.0883 26.0717 9.89914C26.0159 8.7123 25.8277 7.90227 25.5537 7.19346C25.268 6.46013 24.8872 5.83817 24.267 5.21844C23.6469 4.59838 23.0268 4.21744 22.2929 3.93305C21.5822 3.65724 20.7716 3.46928 19.5847 3.41499C18.3956 3.36092 18.017 3.34766 14.9883 3.34766H14.9918ZM13.9917 5.35668C14.2885 5.35623 14.6198 5.35668 14.9918 5.35668C17.9685 5.35668 18.3212 5.36738 19.4967 5.42078C20.5836 5.4705 21.1736 5.65211 21.5666 5.80473C22.0868 6.00673 22.4577 6.24832 22.8477 6.63862C23.2379 7.0288 23.4794 7.40037 23.6819 7.92066C23.8346 8.31308 24.0164 8.90305 24.0659 9.99C24.1193 11.1652 24.1309 11.5182 24.1309 14.4934C24.1309 17.4687 24.1193 17.8217 24.0659 18.9969C24.0162 20.0838 23.8346 20.6738 23.6819 21.0663C23.4799 21.5866 23.2379 21.9571 22.8477 22.347C22.4575 22.7372 22.0871 22.9787 21.5666 23.1808C21.174 23.3341 20.5836 23.5153 19.4967 23.565C18.3214 23.6184 17.9685 23.63 14.9918 23.63C12.015 23.63 11.6621 23.6184 10.487 23.565C9.40004 23.5148 8.81007 23.3332 8.41676 23.1806C7.89659 22.9785 7.5249 22.737 7.13472 22.3468C6.74453 21.9566 6.50306 21.586 6.30049 21.0654C6.14787 20.6729 5.96605 20.0829 5.91655 18.996C5.86315 17.8207 5.85245 17.4678 5.85245 14.4907C5.85245 11.5136 5.86315 11.1625 5.91655 9.98721C5.96627 8.90026 6.14787 8.31029 6.30049 7.91732C6.50261 7.39703 6.74453 7.02546 7.13483 6.63527C7.52502 6.24508 7.89659 6.0035 8.41687 5.80105C8.80985 5.64776 9.40004 5.4666 10.487 5.41666C11.5154 5.37017 11.914 5.35623 13.9917 5.35389V5.35668ZM20.9427 7.20773C20.2041 7.20773 19.6049 7.80639 19.6049 8.54508C19.6049 9.28365 20.2041 9.88287 20.9427 9.88287C21.6813 9.88287 22.2805 9.28365 22.2805 8.54508C22.2805 7.80651 21.6813 7.20729 20.9427 7.20729V7.20773ZM14.9918 8.77083C11.8301 8.77083 9.26671 11.3343 9.26671 14.496C9.26671 17.6578 11.8301 20.22 14.9918 20.22C18.1535 20.22 20.7161 17.6578 20.7161 14.496C20.7161 11.3344 18.1533 8.77083 14.9915 8.77083H14.9918ZM14.9918 10.7799C17.0441 10.7799 18.7079 12.4435 18.7079 14.496C18.7079 16.5483 17.0441 18.2122 14.9918 18.2122C12.9394 18.2122 11.2757 16.5483 11.2757 14.496C11.2757 12.4435 12.9394 10.7799 14.9918 10.7799Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <radialGradient
+                      id="paint0_radial_951_58848"
+                      cx="0"
+                      cy="0"
+                      r="1"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(8.30199 30.9632) rotate(-90) scale(28.2848 26.3071)"
+                    >
+                      <stop stop-color="#FFDD55" />
+                      <stop offset="0.1" stop-color="#FFDD55" />
+                      <stop offset="0.5" stop-color="#FF543E" />
+                      <stop offset="1" stop-color="#C837AB" />
+                    </radialGradient>
+                    <radialGradient
+                      id="paint1_radial_951_58848"
+                      cx="0"
+                      cy="0"
+                      r="1"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="translate(-4.05928 2.28143) rotate(78.681) scale(12.6434 52.1167)"
+                    >
+                      <stop stop-color="#3771C8" />
+                      <stop offset="0.128" stop-color="#3771C8" />
+                      <stop offset="1" stop-color="#6600FF" stop-opacity="0" />
+                    </radialGradient>
+                    <clipPath id="clip0_951_58848">
+                      <rect
+                        width="28.5395"
+                        height="28.5395"
+                        fill="white"
+                        transform="translate(0.721191 0.225586)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="29"
+                  height="29"
+                  viewBox="0 0 29 29"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_951_58853)">
+                    <path
+                      d="M14.6953 0.225586C10.9116 0.225586 7.27947 1.72993 4.60613 4.40506C1.93002 7.08125 0.426278 10.7107 0.425537 14.4953C0.425537 18.2784 1.93055 21.9105 4.60613 24.5856C7.27947 27.2607 10.9116 28.7651 14.6953 28.7651C18.479 28.7651 22.1111 27.2607 24.7844 24.5856C27.46 21.9105 28.965 18.2784 28.965 14.4953C28.965 10.7123 27.46 7.08019 24.7844 4.40506C22.1111 1.72993 18.479 0.225586 14.6953 0.225586Z"
+                      fill="url(#paint0_linear_951_58853)"
+                    />
+                    <path
+                      d="M6.88471 14.3447C11.0452 12.5325 13.8189 11.3376 15.2058 10.7604C19.1701 9.11199 19.9928 8.8257 20.5302 8.816C20.6483 8.81411 20.9114 8.84332 21.0831 8.98211C21.2258 9.09917 21.2659 9.25747 21.286 9.36862C21.3038 9.47966 21.3284 9.73272 21.3083 9.93027C21.0943 12.1867 20.1645 17.6622 19.6918 20.1895C19.4934 21.2589 19.0987 21.6174 18.7175 21.6524C17.888 21.7287 17.2593 21.1048 16.4566 20.5788C15.2013 19.7554 14.4923 19.2431 13.2727 18.4397C11.8635 17.5113 12.7777 17.0009 13.5803 16.167C13.7899 15.9488 17.4421 12.6277 17.5112 12.3265C17.5201 12.2888 17.529 12.1483 17.4443 12.0743C17.3618 12.0001 17.2392 12.0255 17.15 12.0455C17.0229 12.0741 15.0185 13.4003 11.13 16.0239C10.5614 16.415 10.0464 16.6056 9.58258 16.5956C9.07422 16.5847 8.09318 16.3075 7.36409 16.0707C6.47223 15.7802 5.76097 15.6266 5.8234 15.1332C5.85461 14.8763 6.20913 14.6134 6.88471 14.3447Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_951_58853"
+                      x1="1427.4"
+                      y1="0.225586"
+                      x2="1427.4"
+                      y2="2854.17"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#2AABEE" />
+                      <stop offset="1" stop-color="#229ED9" />
+                    </linearGradient>
+                    <clipPath id="clip0_951_58853">
+                      <rect
+                        width="28.5395"
+                        height="28.5395"
+                        fill="white"
+                        transform="translate(0.425537 0.225586)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="69"
+                  height="21"
+                  viewBox="0 0 69 21"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_951_58856)">
+                    <path
+                      d="M26.9235 12.4976L30.6698 17.9141H27.7116L24.3775 12.9396V17.9141H21.9527V3.66038H24.3775V12.0416L27.457 7.93644H30.5485L26.9235 12.4976ZM17.2245 7.65145C16.6936 7.6608 16.1726 7.82128 15.7059 8.11916C15.2393 8.41704 14.8411 8.84343 14.5453 9.36184V7.93644H12.2539V17.9141H14.6785V13.2531C14.6467 12.9148 14.6744 12.5724 14.76 12.2473C14.8456 11.9221 14.9872 11.6211 15.1759 11.3631C15.3647 11.105 15.5967 10.8954 15.8573 10.7473C16.118 10.5992 16.4018 10.5157 16.6911 10.5021C18.0974 10.5021 18.3157 12.1271 18.3157 13.2531V17.9141H20.7405V12.6259C20.7405 9.49015 19.8554 7.65145 17.2731 7.65145H17.2245ZM38.9259 13.1534C38.9352 13.3623 38.9352 13.5716 38.9259 13.7805H32.561V13.8803C32.6643 14.4747 32.9444 15.0064 33.351 15.3799C33.7576 15.7535 34.2642 15.9444 34.7797 15.9186C35.1887 15.9395 35.5971 15.8632 35.9804 15.6942C36.3637 15.5252 36.714 15.2671 37.0105 14.9352L38.6229 16.3606C38.1119 16.9737 37.4972 17.4541 36.8185 17.7708C36.1398 18.0875 35.4122 18.2335 34.6826 18.1993C34.0784 18.2441 33.473 18.1361 32.9074 17.8823C32.3418 17.6286 31.829 17.2351 31.4038 16.7284C30.9786 16.2217 30.6508 15.6136 30.4426 14.9452C30.2344 14.2769 30.1506 13.5637 30.1969 12.854C30.1845 12.1534 30.295 11.4573 30.5214 10.8091C30.7479 10.1609 31.0855 9.57444 31.5131 9.08634C31.9408 8.59824 32.4494 8.21893 33.0072 7.97206C33.5651 7.72519 34.1602 7.61606 34.7554 7.65145C37.0348 7.65145 38.9259 9.54721 38.9259 13.1534ZM36.671 11.9275C36.6621 11.6452 36.6044 11.3679 36.5014 11.1127C36.3984 10.8574 36.2523 10.6295 36.0719 10.4428C35.8915 10.2561 35.6807 10.1145 35.4523 10.0267C35.2239 9.93885 34.9827 9.90663 34.7434 9.93197C33.6772 9.79649 32.7118 10.6794 32.561 11.9275H36.671ZM2.55491 3.66038H0.130127V17.9141H7.40433V15.0636H2.55491V3.66038ZM46.2003 3.66038H48.6249V17.9141H46.3335V16.9163C46.0426 17.3378 45.6718 17.6733 45.2507 17.8961C44.8297 18.1189 44.3702 18.2227 43.9089 18.1993C43.3454 18.1822 42.7907 18.0299 42.2791 17.7516C41.7675 17.4733 41.3097 17.075 40.9338 16.581C40.558 16.087 40.272 15.5079 40.0935 14.8792C39.915 14.2506 39.8478 13.5856 39.8959 12.9253C39.8387 12.264 39.8992 11.5959 40.0735 10.9636C40.2478 10.3313 40.5322 9.74858 40.9085 9.25252C41.2848 8.75646 41.7448 8.35793 42.2593 8.08228C42.7738 7.80663 43.3314 7.65991 43.8967 7.65145C44.3178 7.62976 44.7383 7.70681 45.1338 7.87811C45.5293 8.04941 45.8918 8.31154 46.2003 8.64922V3.66038ZM46.3821 12.9253C46.4202 12.5961 46.3979 12.2612 46.3165 11.9431C46.2352 11.625 46.0968 11.331 45.9107 11.0811C45.7246 10.8312 45.495 10.6311 45.2375 10.4944C44.9801 10.3576 44.7006 10.2874 44.4181 10.2884C43.2582 10.3874 42.3793 11.56 42.4419 12.9253C42.3793 14.2905 43.2582 15.4633 44.4181 15.5623C44.7006 15.5633 44.9801 15.4931 45.2376 15.3563C45.4951 15.2195 45.7246 15.0195 45.9108 14.7695C46.0969 14.5196 46.2353 14.2257 46.3166 13.9075C46.3979 13.5894 46.4202 13.2544 46.3821 12.9253ZM9.82911 3.37524C9.4392 3.38173 9.06591 3.56193 8.78461 3.87946C8.50332 4.19698 8.33498 4.62816 8.31359 5.08594C8.31359 6.06983 8.99212 6.86758 9.82911 6.86758C10.6661 6.86758 11.3444 6.06967 11.3444 5.08594C11.323 4.62821 11.1546 4.19709 10.8734 3.87961C10.5921 3.56212 10.2189 3.38192 9.82898 3.37539M8.61672 17.9141H11.0415V7.93644H8.61672V17.9141ZM68.0229 2.23497V19.3395C68.0229 19.7176 67.8952 20.0801 67.6678 20.3474C67.4404 20.6147 67.1321 20.7649 66.8105 20.7649H52.2621C51.9406 20.7649 51.6322 20.6147 51.4048 20.3474C51.1774 20.0801 51.0497 19.7176 51.0497 19.3395V2.23497C51.0497 1.85693 51.1774 1.49438 51.4048 1.22706C51.6322 0.959746 51.9406 0.80957 52.2621 0.80957H66.8105C67.1321 0.80957 67.4404 0.959746 67.6678 1.22706C67.8952 1.49438 68.0229 1.85693 68.0229 2.23497ZM55.8991 7.93644H53.4745V17.9141H55.8991V7.93644ZM56.2023 5.08578C56.2023 4.10174 55.5237 3.30399 54.6869 3.30399C53.8499 3.30399 53.1714 4.10174 53.1714 5.08578C53.1714 6.06967 53.8499 6.86742 54.6869 6.86742C55.5237 6.86742 56.2023 6.06967 56.2023 5.08578ZM65.5981 12.6259C65.5981 9.49015 64.7131 7.65145 62.1308 7.65145C61.5917 7.6515 61.0608 7.80755 60.5851 8.10584C60.1093 8.40413 59.7033 8.83548 59.4029 9.36184V7.93644H57.1115V17.9141H59.5363V13.2531C59.5045 12.9148 59.5322 12.5724 59.6178 12.2473C59.7033 11.9221 59.8449 11.6211 60.0337 11.3631C60.2225 11.105 60.4544 10.8954 60.7151 10.7473C60.9757 10.5992 61.2595 10.5157 61.5488 10.5021C62.9552 10.5021 63.1735 12.1271 63.1735 13.2531V17.9141H65.5981V12.6259Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_951_58856">
+                      <rect
+                        width="67.8928"
+                        height="19.9553"
+                        fill="white"
+                        transform="translate(0.130127 0.80957)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="jquery.min.js"></script>
+  </body>
+</html>

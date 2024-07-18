@@ -1,0 +1,727 @@
+.language {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-language {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px;
+  z-index: 1;
+}
+
+.dropdown-language a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-language a:hover {
+  color: red;
+}
+.show {
+  display: block;
+  background-color: white;
+  border-radius: 7px;
+}
+
+:root {
+  --primary-color: #ff8b1d;
+
+  --secondary-color: #40b2e8;
+  /* Define a variable named --primary-color with a hex color value */
+}
+.imgowl {
+  width: 14px !important;
+  height: 14px !important;
+}
+.text2 {
+  font-family: "Lilita One", cursive;
+  color: var(--primary-color);
+  color: #ff8b1d;
+  font-family: "Lilita One";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 29.668px */
+}
+.text4 {
+  font-family: "Lilita One", cursive;
+  color: var(--primary-color);
+  color: #ff8b1d;
+  font-family: "Lilita One";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 29.668px */
+}
+.custom-button {
+  width: 100%;
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 0.75rem; /* Equivalent to 12px */
+  background-color: #ff7e00; /* Orange color */
+  font-weight: bold;
+  font-family: "Lilita One", sans-serif; /* Make sure 'Lilita One' is loaded */
+  line-height: 1.5;
+  cursor: pointer;
+  overflow: hidden; /* Ensure overflow is hidden so the scaled text doesn't overflow the button */
+  transition: background-color 0.3s ease; /* Add transition for background color change */
+}
+
+.button-text {
+  display: inline-block;
+  transition: transform 0.3s ease; /* Apply transition only to text */
+}
+
+.custom-button:hover {
+  background-color: #3182ce; /* Blue color */
+}
+.custom-button:hover .button-text {
+  color: black;
+  transform: scale(1.2); /* Scale the text on hover */
+}
+.custom-div:hover {
+  transform: scale(1.1); /* Increase scale on hover */
+  transform-origin: center; /* Adjust the transform origin as needed */
+}
+.custom-div2:hover + .custom-div3 {
+  transform: scale(0.48);
+  transform-origin: center;
+}
+
+.custom-div2:hover {
+  transform: scale(1.4); /* Increase scale on hover */
+}
+.custom-div2 {
+  transition: transform 0.3s ease; /* Add transition to transform property */
+}
+.custom-div {
+  transition: transform 0.3s ease; /* Add transition to transform property */
+}
+
+.text3 {
+  color: #2b1831;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 29.668px */
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .text2 {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 95%;
+    padding: 0 1rem;
+  }
+  .text4 {
+    font-size: 18px;
+  }
+  .text2 {
+    font-size: 12px;
+  }
+  .text3 {
+    font-size: 12px;
+    text-align: center;
+    width: 70%;
+  }
+  /* Styles for extra small devices */
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    width: 95%;
+    padding: 0 1rem;
+  }
+  /* Styles for small devices */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    width: 95%;
+    padding: 0 1rem;
+  }
+  .text2 {
+    font-size: 20px;
+  }
+  .text3 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .text4 {
+    font-size: 12px;
+  }
+  /* Styles for medium devices */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    width: 90% !important;
+    padding: 0 1rem;
+  }
+  .text2 {
+    font-size: 20px;
+  }
+  .text3 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .text4 {
+    font-size: 12px;
+  }
+  /* Styles for large devices */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .container {
+    width: 1024px !important;
+    padding: 0 1rem;
+  }
+  .text2 {
+    font-size: 20px;
+  }
+  .text3 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .text4 {
+    font-size: 12px;
+  }
+  /* Styles for extra large devices */
+}
+@media (min-width: 1439px) {
+  .container {
+    width: 1400px !important;
+    padding: 0 1rem;
+  }
+  .text2 {
+    font-size: 20px;
+  }
+  .text3 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .text4 {
+    font-size: 12px;
+  }
+  /* Styles for extra large devices */
+}
+:root {
+  --primary-color: #ff8b1d;
+
+  --secondary-color: #40b2e8;
+  /* Define a variable named --primary-color with a hex color value */
+}
+.imgowl {
+  width: 14px !important;
+  height: 14px !important;
+}
+.text2 {
+  font-family: "Lilita One", cursive;
+  color: var(--primary-color);
+  color: #ff8b1d;
+  font-family: "Lilita One";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 29.668px */
+}
+
+.custom-div:hover {
+  transform: scale(1.1); /* Increase scale on hover */
+  transform-origin: center; /* Adjust the transform origin as needed */
+}
+.custom-div2:hover + .custom-div3 {
+  transform: scale(0.48);
+  transform-origin: center;
+}
+
+.custom-div2:hover {
+  transform: scale(1.4); /* Increase scale on hover */
+}
+.custom-div2 {
+  transition: transform 0.3s ease; /* Add transition to transform property */
+}
+.custom-div {
+  transition: transform 0.3s ease; /* Add transition to transform property */
+}
+
+.text3 {
+  color: #2b1831;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 29.668px */
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .text2 {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .text2 {
+    font-size: 25px !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .text2 {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    width: 95%;
+    padding: 0 1rem;
+  }
+  .text4 {
+    font-size: 18px;
+  }
+  .text2 {
+    font-size: 12px;
+  }
+  .text3 {
+    font-size: 12px;
+    text-align: center;
+    width: 70%;
+  }
+  /* Styles for extra small devices */
+}
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    width: 95%;
+    padding: 0 1rem;
+  }
+  /* Styles for small devices */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    width: 95%;
+    padding: 0 1rem;
+  }
+  .text2 {
+    font-size: 20px;
+  }
+  .text3 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .text4 {
+    font-size: 12px;
+  }
+  /* Styles for medium devices */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+    width: 90% !important;
+    padding: 0 1rem;
+  }
+  .text2 {
+    font-size: 20px;
+  }
+  .text3 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .text4 {
+    font-size: 12px;
+  }
+  /* Styles for large devices */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .container {
+    width: 1024px !important;
+    padding: 0 1rem;
+  }
+  .text2 {
+    font-size: 20px;
+  }
+  .text3 {
+    font-size: 12px;
+    text-align: center;
+  }
+  .text4 {
+    font-size: 12px;
+  }
+  /* Styles for extra large devices */
+}
+.language {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-language {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px;
+  z-index: 1;
+}
+
+.dropdown-language a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-language a:hover {
+  color: red;
+}
+.show {
+  display: block;
+  background-color: white;
+  border-radius: 7px;
+}
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary: #ff8b1d;
+  --secondary: #ff8b1d;
+  --errorColor: red;
+  --stepNumber: 6;
+  --containerWidth: 600px;
+  --bgColor: #333;
+  --inputBorderColor: lightgray;
+}
+
+@media screen and (max-width: 490px) {
+  :root {
+    --containerWidth: 100%;
+  }
+  .container {
+    box-sizing: border-box;
+    border-radius: 0;
+  }
+}
+.language {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-language {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px;
+  z-index: 1;
+}
+
+.dropdown-language a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-language a:hover {
+  color: red;
+}
+.show {
+  display: block;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary: #ff8b1d;
+  --secondary: #ff8b1d;
+  --errorColor: red;
+  --stepNumber: 6;
+  --containerWidth: 600px;
+  --bgColor: #333;
+  --inputBorderColor: lightgray;
+}
+
+/* register */
+::selection {
+  color: #fff;
+  background: var(--primary);
+}
+.container {
+  width: 90%;
+  text-align: center;
+  border-radius: 5px;
+}
+.container header {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-outer {
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form {
+  display: flex;
+  width: calc(100% * var(--stepNumber));
+}
+.form-outer form .page {
+  width: calc(100% / var(--stepNumber));
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title {
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field {
+  width: var(--containerWidth);
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .page .field .label {
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+form .page .field input {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid var(--inputBorderColor);
+  border-radius: 5px;
+  padding-left: 15px;
+  margin: 0 1px;
+  font-size: 18px;
+  transition: border-color 150ms ease;
+}
+form .page .field input.invalid-input {
+  border-color: var(--errorColor);
+}
+form .page .field select {
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field button {
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: var(--secondary);
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field button:hover {
+  background: #000;
+}
+form .page .btns button {
+  margin-top: -20px !important;
+}
+form .page .btns button.prev {
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next {
+  margin-left: 3px;
+}
+.container .progress-bar {
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.container .progress-bar .step {
+  text-align: center;
+  /* width: 100%; */
+  position: relative;
+}
+.container .progress-bar .step p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 8px;
+}
+.progress-bar .step .bullet {
+  background-color: #9dd1e9;
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar .step .bullet.active {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: #fff;
+}
+.progress-bar .step .bullet span {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 18%;
+  transform: translateX(-50%);
+}
+.progress-bar .step .bullet.active span {
+  /* display: none; */
+}
+.progress-bar .step .bullet + div {
+  position: absolute;
+  content: "";
+  bottom: 11px;
+  right: -401px;
+  height: 3px;
+  width: 350px;
+  background: #c63737;
+}
+/* @media (min-width: 601px) and (max-width: 1024px) {
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after {
+    right: -280px;
+    width: 265px;
+  }
+} */
+
+.connector.active {
+  border-color: var(--primary);
+}
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after {
+  display: none;
+}
+.progress-bar .step p.active {
+  color: var(--primary);
+  transition: 0.2s linear;
+}
+.progress-bar .step .check {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@media screen and (max-width: 660px) {
+  :root {
+    --containerWidth: 400px;
+  }
+  .progress-bar .step p {
+    display: none;
+  }
+  .connector {
+    display: none;
+  }
+  .progress-bar .step .bullet {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .progress-bar .step .check {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  .step {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 490px) {
+  :root {
+    --containerWidth: 100%;
+  }
+  .container {
+    box-sizing: border-box;
+    border-radius: 0;
+  }
+}
+.about-skills .skill-item .skill-header {
+  position: relative;
+}
+.about-skills .skill-item .skill-header .skill-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+.about-skills .skill-item .skill-header .skill-percentage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #32333c;
+  font-weight: 400;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.about-skills .skill-item .skill-header .skill-percentage .count-box {
+  font-size: 16px;
+  color: #32333c;
+}
+.about-skills .skill-item .skill-bar {
+  margin-top: 15px;
+}
+.about-skills .skill-item .skill-bar .bar-inner {
+  width: 100%;
+  height: 32px;
+  border-radius: 20px;
+  background-color: #9dd1e9;
+  position: relative;
+}
+.about-skills .skill-item .skill-bar .bar-inner .progress-line {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  height: 22px;
+  border-radius: 20px;
+  background-color: #ff8b1d;
+  -webkit-transition: all 2s ease-out 0s;
+  -moz-transition: all 2s ease-out 0s;
+  -ms-transition: all 2s ease-out 0s;
+  -o-transition: all 2s ease-out 0s;
+  transition: all 2s ease-out 0s;
+  width: 0;
+}

@@ -1,0 +1,298 @@
+.body {
+  margin: 0;
+  padding: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.document-cont {
+  display: flex;
+  /* width: 1440px; */
+  justify-content: center;
+  align-items: center;
+  background: var(--Base-On-Background, #fff);
+}
+.doc-card-cont {
+  margin: auto !important;
+  /* width: 70%; */
+
+  margin: 0 20px;
+  padding: 20px;
+  background: var(--Base-On-Background, #fff);
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+}
+.doc-card-cont .doc-card {
+  margin: 1px !important;
+  margin-bottom: 20px !important;
+  box-sizing: border-box !important;
+  /* width: 385px; */
+  height: 327px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 1px solid #f2f3f4;
+  background: var(--Base-On-Background, #fff);
+  box-shadow: 14px 14px 35px 0px rgba(231, 231, 231, 0.9),
+    -14px -14px 28px 0px rgba(255, 255, 255, 0.9),
+    14px -14px 28px 0px rgba(231, 231, 231, 0.2),
+    -14px 14px 28px 0px rgba(231, 231, 231, 0.2);
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .text1 {
+    font-size: 42px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .text1 {
+    font-size: 42px !important;
+  }
+}
+@media (min-width: 768px) {
+  .text1 {
+    font-size: 56px !important;
+  }
+}
+@media (min-width: 992px) {
+  .modal-content {
+    width: 686px !important;
+    height: 851px;
+    flex-shrink: 0;
+  }
+}
+.modal-content {
+  /* width: 686px !important; */
+  height: 851px;
+  flex-shrink: 0;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 686px !important;
+    /* margin-right: auto; */
+    margin-left: auto;
+  }
+}
+.custom-checkbox {
+  /* display: flex;
+  align-items: center; */
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: stretch;
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.checkmark {
+  justify-content: center;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  /* width: 46px !important; */
+  height: 145px;
+  flex-shrink: 0;
+  /* height: 126px; */
+  margin-right: 10px;
+  border: 2px solid #555; /* Border style */
+  border-radius: 5px; /* Border radius */
+  background-color: #f0f0f0; /* Background color */
+}
+
+.custom-checkbox input:checked + .checkmark {
+  background-color: #4caf50; /* Change the background color when checked */
+  border-color: #4caf50; /* Change the border color when checked */
+}
+
+.custom-checkbox input:checked + .checkmark .path-unchecked {
+  stroke: rgb(0, 1, 0); /* Change the stroke color when checked */
+}
+.custom-checkbox input:checked + .checkmark + .agencies {
+  border: #f42424 1px solid; /* Change the border color when checked */
+}
+
+.custom-checkbox input:checked + .test {
+  color: red;
+  border-color: #4caf50;
+  /* Change text color to red when checked */
+}
+.path-unchecked {
+  stroke: rgb(251, 255, 251); /* Change the stroke color when checked */
+}
+.agenciesCont::-webkit-scrollbar {
+  display: none;
+}
+.modal-footer {
+  border-top: none !important;
+}
+.modal-header {
+  border-bottom: none !important;
+}
+/* Hide scrollbar for IE, Edge, and Firefox */
+body {
+  scrollbar-width: none;
+}
+.agenciesCont {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1024px !important;
+  /* width: 558px; */
+  height: 386px;
+  flex-shrink: 0;
+}
+.agencies {
+  margin-right: 10px;
+  border: #7d7d7d 1px solid;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+
+  /* width: 441px; */
+
+  /* max-width: ; */
+  height: 145px;
+}
+
+/* Tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Styles for tablet devices */
+  /* .agencies {
+    width: 300px;
+  } */
+}
+.docname {
+  width: 274px !important;
+}
+.textWraper {
+  font-family: cairo;
+  color: black !important;
+  font-weight: 500;
+  color: #7c7c7c;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+/* Large-screen devices (e.g., desktops) */
+@media only screen and (min-width: 992px) {
+  .price {
+    width: 90% !important;
+  }
+  .nextBtns {
+    width: 90% !important;
+  }
+  /* .agencies {
+    width: 441px;
+  } */
+  /* Styles for large-screen devices */
+}
+.nextBtns {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90% !important;
+  justify-content: space-evenly;
+}
+.chcustom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+@media only screen and (max-width: 767px) {
+  .agenciesCont {
+    width: 95% !important;
+  }
+
+  .text1 {
+    font-size: 72px !important;
+  }
+  .addfield {
+    font-size: 16px;
+  }
+
+  /* Styles for mobile devices */
+}
+@media only screen and (max-width: 767px) {
+  .addfield {
+    font-size: 16px !important;
+  }
+  .price {
+    width: 90% !important;
+  }
+  .nextBtns {
+    display: flex;
+    justify-content: space-between !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90% !important;
+  }
+  .text {
+    font-size: medium !important;
+  }
+  /* Styles for mobile devices */
+}
+
+.ifo-btn {
+  width: 85%;
+  height: 87px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: 2px solid #e6e6e6;
+  color: #9f9f9f;
+  text-align: right;
+  font-family: Cairo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 20px;
+}
+.about-skills .skill-item .skill-header {
+  position: relative;
+}
+.about-skills .skill-item .skill-header .skill-title {
+  font-size: 16px;
+  font-weight: 400;
+}
+.about-skills .skill-item .skill-header .skill-percentage {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  color: #32333c;
+  font-weight: 400;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+.about-skills .skill-item .skill-header .skill-percentage .count-box {
+  font-size: 16px;
+  color: #32333c;
+}
+.about-skills .skill-item .skill-bar {
+  margin-top: 15px;
+}
+.about-skills .skill-item .skill-bar .bar-inner {
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+  position: relative;
+}
+.about-skills .skill-item .skill-bar .bar-inner .progress-line {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #c2d307;
+  -webkit-transition: all 2s ease-out 0s;
+  -moz-transition: all 2s ease-out 0s;
+  -ms-transition: all 2s ease-out 0s;
+  -o-transition: all 2s ease-out 0s;
+  transition: all 2s ease-out 0s;
+  width: 0;
+}
